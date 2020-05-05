@@ -9,12 +9,19 @@
   <body>
     <script src="./data.js"></script>
     <script>
-      function countAllPeople() {
+      function countAllPeople(houses) {
         // your code goes here
+        let count = 0;
+        let newArr = [];
+        houses.forEach(x => newArr.push(x.people.name))
+        count += newArr.length;
+        return count;
       }
 
       function peopleByHouses() {
         // your code goes here
+
+        houses.forEach(x => newArr.push(x.people.name))
       }
 
       function everyone() {
